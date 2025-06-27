@@ -28,10 +28,10 @@ export default class Download extends Command {
   static description = 'Download a YouTube video (interactive mode if no URL provided)';
 
   static examples = [
-    '$ yt-dl',
-    '$ yt-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    '$ yt-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ --quality 1080p',
-    '$ yt-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ --format mp3',
+    '$ ytube-dl',
+    '$ ytube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    '$ ytube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ --quality 1080p',
+    '$ ytube-dl https://www.youtube.com/watch?v=dQw4w9WgXcQ --format mp3',
   ];
 
   static flags = {
@@ -68,7 +68,7 @@ export default class Download extends Command {
   async run(): Promise<void> {
     const { args, flags } = await this.parse(Download);
     
-    console.log(chalk.cyan(figlet.textSync('YT-DL', { font: 'Standard' })));
+    console.log(chalk.cyan(figlet.textSync('YTUBE-DL', { font: 'Standard' })));
     console.log(chalk.gray('A modern CLI tool to download YouTube videos\n'));
 
     let url = args.url;

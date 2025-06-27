@@ -1,10 +1,18 @@
 {
-  "name": "yt-dl",
+  "name": "ytube-dl",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zyuapp/yt-dl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zyuapp/yt-dl/issues"
+  },
+  "homepage": "https://github.com/zyuapp/yt-dl#readme",
   "description": "A modern CLI tool to download YouTube videos",
   "main": "dist/index.js",
   "bin": {
-    "yt-dl": "./dist/index.js"
+    "ytube-dl": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -21,7 +29,7 @@
     "video",
     "mp4"
   ],
-  "author": "",
+  "author": "Your Name <your.email@example.com>",
   "license": "MIT",
   "dependencies": {
     "@distube/ytdl-core": "^4.16.12",
@@ -50,8 +58,8 @@
     "node": ">=18.0.0"
   },
   "oclif": {
-    "bin": "yt-dl",
-    "dirname": "yt-dl",
+    "bin": "ytube-dl",
+    "dirname": "ytube-dl",
     "commands": "./dist/commands",
     "default": "download",
     "plugins": [
