@@ -1,6 +1,15 @@
-# YT-DL
+# YTUBE-DL
 
 A modern CLI tool to download YouTube videos with a beautiful interface.
+
+## 🚀 Quick Start
+
+```bash
+# Just run this - no installation needed!
+npx ytube-dl@latest
+```
+
+Then paste any YouTube URL and follow the interactive prompts! 
 
 ## Features
 
@@ -13,10 +22,29 @@ A modern CLI tool to download YouTube videos with a beautiful interface.
 
 ## Installation
 
+### Option 1: Use with npx (No installation needed)
+```bash
+# Run directly with npx
+npx ytube-dl
+
+# Or use latest version explicitly
+npx ytube-dl@latest
+```
+
+### Option 2: Install globally
+```bash
+# Install globally from npm
+npm install -g ytube-dl
+
+# Then use anywhere
+ytube-dl
+```
+
+### Option 3: Development setup
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd yt-dl
+git clone https://github.com/zyuapp/ytube-dl.git
+cd ytube-dl
 
 # Install dependencies
 npm install
@@ -33,27 +61,31 @@ npm link
 ### Basic Usage
 
 ```bash
-# Interactive mode (no arguments)
-./yt-dl
+# Interactive mode (no arguments) - Recommended!
+npx ytube-dl
 
 # Download a video directly
-./yt-dl https://www.youtube.com/watch?v=VIDEO_ID
+npx ytube-dl https://www.youtube.com/watch?v=VIDEO_ID
 
-# Or use node
-node dist/index.js download https://www.youtube.com/watch?v=VIDEO_ID
+# Use latest version
+npx ytube-dl@latest
+
+# If installed globally
+ytube-dl https://www.youtube.com/watch?v=VIDEO_ID
 ```
 
 ### Interactive Mode
 
 ```bash
-# Automatic interactive mode (no URL)
-./yt-dl
+# Automatic interactive mode (no URL) - Just run without arguments
+npx ytube-dl
 
 # Explicit interactive mode
-./yt-dl --interactive
+npx ytube-dl --interactive
 
-# Or
-node dist/index.js download --interactive
+# If installed globally
+ytube-dl
+ytube-dl --interactive
 ```
 
 ### Options
@@ -67,16 +99,19 @@ node dist/index.js download --interactive
 
 ```bash
 # Download in 1080p quality
-./yt-dl https://www.youtube.com/watch?v=VIDEO_ID --quality 1080p
+npx ytube-dl https://www.youtube.com/watch?v=VIDEO_ID --quality 1080p
 
 # Download audio only (MP3)
-./yt-dl https://www.youtube.com/watch?v=VIDEO_ID --format mp3
+npx ytube-dl https://www.youtube.com/watch?v=VIDEO_ID --format mp3
 
 # Download to specific directory
-./yt-dl https://www.youtube.com/watch?v=VIDEO_ID --output ~/Downloads
+npx ytube-dl https://www.youtube.com/watch?v=VIDEO_ID --output ~/Downloads
 
-# Interactive mode (automatic)
-./yt-dl
+# Interactive mode (automatic) - Just run without arguments!
+npx ytube-dl
+
+# Always use latest version
+npx ytube-dl@latest
 ```
 
 ## Development

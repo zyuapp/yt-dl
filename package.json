@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zyuapp/yt-dl.git"
+    "url": "https://github.com/zyuapp/ytube-dl.git"
   },
   "bugs": {
-    "url": "https://github.com/zyuapp/yt-dl/issues"
+    "url": "https://github.com/zyuapp/ytube-dl/issues"
   },
-  "homepage": "https://github.com/zyuapp/yt-dl#readme",
+  "homepage": "https://github.com/zyuapp/ytube-dl#readme",
   "description": "A modern CLI tool to download YouTube videos",
   "main": "dist/index.js",
   "bin": {
