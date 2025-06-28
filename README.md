@@ -132,7 +132,7 @@ npm run build
 
 ## Requirements
 
-- Node.js >= 18.0.0
+- Node.js >= 20.18.1
 - npm or yarn
 
 ## License
