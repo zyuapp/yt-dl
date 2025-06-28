@@ -12,6 +12,9 @@ dist/
 build/
 *.tsbuildinfo
 
+# Generated binary
+ytube-dl
+
 # Environment variables
 .env
 .env.local
